@@ -1,0 +1,124 @@
+{
+  "Albums": [
+    { 
+      "id": 1,
+      "name": "Razones",
+      "subtitle": "Album",
+      "artist": "Anuel AA",
+      "cover": "https://imgs.search.brave.com/iggEQnOnLbX7s-RDtHYwKzMI2KEGWMq_N2m5a6WdcWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1jZG4uaHlwYi5z/dC9odHRwczovL2h5/cGViZWFzdC5jb20v/aW1hZ2UvMjAyMC8w/NS9hbnVlbC1hYS1l/bW1hbnVlbC1hbGJ1/bS1zdHJlYW0tMDAx/LmpwZz9jYnI9MSZx/PTkw",
+      "songs": [
+        {
+          "id": 1,
+          "title": "No Love",
+          "artists": "Anuel AA, Spiff TV",
+          "cover": "https://imgs.search.brave.com/MuKKXSjb549evWrdLLmYboXls8D33DB0ESDdqM2SVFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLWF4Z1dN/ZUF2bHNtci0wLXQ1/MDB4NTAwLmpwZw"
+        },
+        {
+          "id": 2,
+          "title": "BBY BOO - REMIX",
+          "artists": "Anuel AA, iZaak, Jhayco",
+          "cover": "https://imgs.search.brave.com/S_WJwEudfCjG9Ah_EfXDF4CPUQwC1w0NIe1WJuQ7b30/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tcDN0/ZWNhLmNvLy0vaW1h/Z2VzLzM3MjkwXzY0/MF8yMDI0MDMyNDA0/MTAxMC0zMDB4MzAw/LmpwZw"
+        },
+        {
+          "id": 3,
+          "title": "OA",
+          "artists": "Anuel AA, Quevedo, Maluma, Mabmo Kingz, DJ Luian",
+          "cover": "https://imgs.search.brave.com/lJlDhU5Acy8L5WhAGxaQiiGmtMyNg0IC1o3TAnyTt1M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLTlnbzdJ/Y2FuNjJ5cC0wLXQ1/MDB4NTAwLmpwZw"
+        },
+        {
+          "id": 4,
+          "title": "Toki",
+          "artists": "Casper Magico, Anuel AA, iZaak, Luar La L",
+          "cover": "https://imgs.search.brave.com/TeMbk7NWg1BR9Esbpnb4APFeQoxiYdTakvgDcBUh29s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLUYzVm1Q/bWxOU0lONC0wLXQ1/MDB4NTAwLmpwZw"
+        },
+        {
+          "id": 5,
+          "title": "Reloj",
+          "artists": "Rauw Alejandro, Anuel AA",
+          "cover": "https://imgs.search.brave.com/wFk1vMeM1eqBySw_BRDWTmoOjktBQInn0wyewx4cHuE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLWhiUmVM/YmZnaHZvay0wLXQ1/MDB4NTAwLmpwZw"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sakura",
+      "subtitle": "Album",
+      "artist": "Saiko",
+      "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw",
+      "songs": [
+        {
+          "id": 1,
+          "title": "Polaris - Remix",
+          "artists": "SAIKO, Feid, Quevedo, Mora",
+          "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw"
+        },
+        {
+          "id": 2,
+          "title": "COMET HALLEY",
+          "artists": "SAIKO, J Balvin",
+          "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw"
+        },
+        {
+          "id": 3,
+          "title": "SUPERNOVA",
+          "artists": "SAIKO",
+          "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw"
+        },
+        {
+          "id": 4,
+          "title": "BADGYAL",
+          "artists": "SAIKO, JC Reyes, Dei V",
+          "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw"
+        },
+        {
+          "id": 5,
+          "title": "ESKELETO",
+          "artists": "SAIKO, Bryant Myers",
+          "cover": "https://imgs.search.brave.com/YCxqEy3Hfn_epesbCrwn9MnyVUY0mEJbF_PY43Yx0tM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4y/LmFsYnVtb2Z0aGV5/ZWFyLm9yZy8yMDB4/L2FsYnVtLzkzMDEz/MC1zYWt1cmFfMTYy/MjIwLmpwZw"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PLAYA SATURNO",
+      "subtitle": "Album",
+      "artist": "Rauw Alejandro",
+      "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc",
+      "songs": [
+        {
+          "id": 1,
+          "title": "AL CALLAO`",
+          "artists": "Rauw Alejandro",
+          "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc"
+        },
+        {
+          "id": 2,
+          "title": "PONTE NASTY",
+          "artists": "Rauw Alejandro, Joweel & Randy",
+          "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc"
+        },
+        {
+          "id": 3,
+          "title": "CUKI",
+          "artists": "Rauw Alejandro",
+          "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc"
+        },
+        {
+          "id": 4,
+          "title": "CUANDO BAJE EL SOL",
+          "artists": "Rauw Alejandro",
+          "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc"
+        },
+        {
+          "id": 5,
+          "title": "INQUIETO",
+          "artists": "Rauw Alejandro",
+          "cover": "https://imgs.search.brave.com/4PWXES9Sk_H0Zd4roHT74PloZuIvS7AGjpx7nddnkWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xNi9SYXV3X0Fs/ZWphbmRyb18tX1Bs/YXlhX1NhdHVybm8u/cG5nLzIyMHB4LVJh/dXdfQWxlamFuZHJv/Xy1fUGxheWFfU2F0/dXJuby5wbmc"
+        }
+      ]
+    },
+    {
+      "id": 4
+    }
+  ]
+}
