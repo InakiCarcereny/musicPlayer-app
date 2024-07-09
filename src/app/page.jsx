@@ -1,9 +1,18 @@
-import Image from "next/image";
+import albums from "../app/data/songs.json";
+import { Header } from "./components/Header";
+import { SectionAlbums } from "./components/SectionAlbums";
+import { SectionRecentSongs } from "./components/SectionRecentSongs";
 
 export default function Home() {
+  const album = albums.albums;
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-center text-4xl font-bold">Music Player App</h1>
-    </main>
+    <div className="flex flex-col flex-1">
+      <Header />
+
+      <SectionAlbums albums={album}/>
+
+      <SectionRecentSongs />
+    </div>
   );
 }
