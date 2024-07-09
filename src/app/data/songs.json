@@ -1,5 +1,5 @@
 {
-  "Albums": [
+  "albums": [
     { 
       "id": 1,
       "name": "Razones",
@@ -118,7 +118,82 @@
       ]
     },
     {
-      "id": 4
+      "id": 4,
+      "name": "Easy Money Baby",
+      "subtitle": "Album",
+      "artist": "Myke Towers",
+      "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw",
+      "songs": [
+        {
+          "id": 1,
+          "title": "Si Se Da",
+          "artists": "Myke Towers, Farruko",
+          "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw"
+        },
+        {
+          "id": 2,
+          "title": "La Playa",
+          "artists": "Myke Towers",
+          "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw"
+        },
+        {
+          "id": 3,
+          "title": "Parcerita",
+          "artists": "Myke Towers",
+          "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw"
+        },
+        {
+          "id": 4,
+          "title": "LVCC",
+          "artists": "Myke Towers",
+          "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw"
+        },
+        {
+          "id": 5,
+          "title": "Fugaz",
+          "artists": "Myke Towers",
+          "cover": "https://imgs.search.brave.com/H3YCOtwG5soM_2FR42OgBm1pM_5LWIvk8LCn9dlpKSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzg4/OTlhNWY4NTgzODQ3/N2ExM2E2NDQ1ZmFh/YWVjYmQ3LmpwZw"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ESTRELLAS",
+      "subtitle": "Album",
+      "artist": "Mora",
+      "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw",
+      "songs": [
+        {
+          "id": 1,
+          "title": "POLVORA",
+          "artists": "Mora, Yandel",
+          "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw"
+        },
+        {
+          "id": 2,
+          "title": "REINA",
+          "artists": "Mora, SAIKO",
+          "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw"
+        },
+        {
+          "id": 3,
+          "title": "LOKITA",
+          "artists": "Mora",
+          "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw"
+        },
+        {
+          "id": 4,
+          "title": "UN DESEO",
+          "artists": "Mora, RaiNao",
+          "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw"
+        },
+        {
+          "id": 5,
+          "title": "DIAMONDS",
+          "artists": "Mora, Dei V",
+          "cover": "https://imgs.search.brave.com/A6sNQ6CwBSyAS8KTf70m2n1bF4hHV1qT0JWSqfGueEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sYXN0/Zm0uZnJlZXRscy5m/YXN0bHkubmV0L2kv/dS81MDB4NTAwLzhj/OTZhOGU1MDRkOTYy/ZWI5YmM0N2ZjN2I2/NjVmOWY0LmpwZw"
+        }
+      ]
     }
   ]
 }
