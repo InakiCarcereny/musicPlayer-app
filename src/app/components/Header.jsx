@@ -1,27 +1,11 @@
 'use client'
 
 import Image from "next/image";
-import { SearchIcon } from "../icons/SearchIcon";
-import { useEffect, useState } from "react";
+import { SearchIcon } from "@/app/icons/SearchIcon";
+import { useTime } from "@/app/hooks/useTime";
 
 export function Header() {
-  const [time] = useState(new Date().getHours())
-  const [phase, setPhase] = useState(undefined)
-
-  useEffect(() => {
-
-    if (time >= 6 && time < 12) {
-      setPhase('Good Morning')
-    }
-
-    if (time >= 12 && time < 18) {
-      setPhase('Good Afternoon')
-    }
-
-    if (time >= 18 && time < 24) {
-      setPhase('Good Evening')
-    }
-  }, [time])
+  const { phase } = useTime()
 
   return (
       <header className="flex items-center justify-between pt-4">
@@ -32,11 +16,11 @@ export function Header() {
         width={50} 
         height={50} />
 
-        <span className="text-lg font-bold text-center">
+        <span className="text-base font-bold text-center">
           {phase}
         </span>
 
-        <div>
+        <div className="bg-gray-100 rounded-full py-1 px-3">
           <SearchIcon />
         </div>
       </header>
