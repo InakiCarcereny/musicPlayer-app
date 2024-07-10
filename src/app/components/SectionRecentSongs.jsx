@@ -1,7 +1,7 @@
 export function SectionRecentSongs () {
 
   return (
-    <section className="mt-12 px-4">
+    <section className="mt-8">
       <h2 className="font-medium text-xl">
         Recent Played
       </h2>
