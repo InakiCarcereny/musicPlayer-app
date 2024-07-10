@@ -1,7 +1,7 @@
 export function Album({ name, artist, cover, subtitle }) {
 
   return (
-    <div className="flex flex-col hover:bg-gray-100 rounded-lg p-2 shadow-md max-w-[200px] cursor-pointer">
+    <div className="flex flex-col bg-gray-100 rounded-lg p-2 shadow-md max-w-[200px] cursor-pointer hover:scale-105 duration-200">
       <img
       className="w-[140px] h-[140px] rounded-lg"
       src={cover} 

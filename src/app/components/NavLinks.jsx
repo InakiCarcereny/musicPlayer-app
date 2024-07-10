@@ -1,7 +1,10 @@
+'use client'
+
 import Link from "next/link"
 import { HearthIcon } from "../icons/HearthIcon"
 import { HomeIcon } from "../icons/HomeIcon"
 import { SearchIcon } from "../icons/SearchIcon"
+import { usePathname } from "next/navigation"
 
 const links = [
   {
@@ -22,6 +25,7 @@ const links = [
 ]
 
 export function NavLinks () {
+  const pathname = usePathname()
 
   return (
     <>
@@ -30,8 +34,11 @@ export function NavLinks () {
           return (
             <Link key={link.name} href={link.href}>
               <div className="flex flex-col items-center justify-center">
-                {link.icon}
-                <span className="text-lg font-medium">{link.name}</span>
+                <span className={`hover:text-indigo-500 hover:bg-slate-300 rounded-full py-1 px-3
+                  ${pathname === link.href ? "bg-slate-300 text-indigo-500" : ""}`}>
+                  {link.icon}
+                </span>
+                <span className="text-base font-medium">{link.name}</span>
               </div>
             </Link>
           )
