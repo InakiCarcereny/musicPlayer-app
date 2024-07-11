@@ -7,7 +7,7 @@ export function SectionSongOfTheDay ({ albums }) {
 
   return (
     <section className="mt-8">
-      <h2 className="font-medium text-xl">
+      <h2 className="font-bold text-xl">
         Song of the Day
       </h2>
 
@@ -24,11 +24,14 @@ export function SectionSongOfTheDay ({ albums }) {
                         className="w-[400px] h-[200px] rounded-lg"
                         src={song.cover} 
                         alt={song.title} />
-                        <div className="flex items-center justify-center gap-6 pt-2">
-                          <span className="font-medium">
+                        <div className="flex items-center justify-center gap-2 pt-2">
+                          <span className="font-medium text-indigo-500">
                             {song.title}
                           </span>
-                          <span className="text-sm text-gray-500 font-semibold">
+                          <span className="text-xs text-gray-500 font-semibold">
+                            ●
+                          </span>
+                          <span className="text-xs text-gray-500 font-semibold">
                             {song.artists}
                           </span>
                         </div>

@@ -7,12 +7,12 @@ export function Album({ name, artist, cover, subtitle }) {
       src={cover} 
       alt={name} />
 
-      <div className="flex flex-col gap-2 pt-2">
-        <span className="font-medium whitespace-nowrap overflow-hidden text-ellipsis text-md">
+      <div className="flex flex-col gap-1 pt-2">
+        <span className="font-medium whitespace-nowrap overflow-hidden text-ellipsis text-md text-indigo-500">
           {name}
         </span>
 
-        <span className="text-sm text-gray-500 font-semibold">
+        <span className=" text-xs text-gray-500 font-semibold">
           {artist}
         </span>
       </div>

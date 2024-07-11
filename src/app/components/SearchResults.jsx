@@ -7,7 +7,7 @@ export function SearchResults () {
 
   return (
     <section className="mt-8 flex flex-col">
-      <h2 className="font-medium text-xl">
+      <h2 className="font-bold text-xl">
         Browse All
       </h2>
 

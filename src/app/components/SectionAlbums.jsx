@@ -8,7 +8,7 @@ export function SectionAlbums () {
 
   return (
     <section className="flex flex-col mt-8">
-      <h1 className="font-medium text-xl">
+      <h1 className="font-bold text-xl">
         Albums
       </h1>
       <div className="flex flex-wrap gap-4 mt-4">
