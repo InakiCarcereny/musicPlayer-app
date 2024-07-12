@@ -21,6 +21,7 @@ export function SectionAlbums () {
                 artist={album.artist}
                 cover={album.cover}
                 subtitle={album.subtitle}
+                id={album.id}
               />
             )
           })
