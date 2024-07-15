@@ -2,6 +2,7 @@
 
 import { useSelector } from "react-redux"
 import { Album } from "./Album"
+import { Carousel, CarouselPrevious, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
 
 export function SectionAlbums () {
   const album = useSelector(state => state.albums.albums)
@@ -11,7 +12,8 @@ export function SectionAlbums () {
       <h1 className="font-bold text-xl">
         Albums
       </h1>
-      <div className="flex flex-wrap gap-4 mt-4">
+      <Carousel className="flex gap-4 mt-4">
+        <CarouselContent>
         {
           album.map((album) => {
             return (
@@ -26,7 +28,10 @@ export function SectionAlbums () {
             )
           })
         }
-      </div>
+        </CarouselContent>
+        <CarouselPrevious className="hidden" />
+        <CarouselNext className="hidden" />
+      </Carousel>
     </section>
   )
 }
