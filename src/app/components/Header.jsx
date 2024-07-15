@@ -16,7 +16,7 @@ export function Header() {
         width={50} 
         height={50} />
 
-        <span className="text-base font-bold text-center">
+        <span className="text-base font-bold text-center text-indigo-500">
           {phase}
         </span>
 
