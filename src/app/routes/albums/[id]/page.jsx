@@ -1,5 +1,6 @@
 'use client'
 
+import { Song } from "@/app/components/Song"
 import { useSelector } from "react-redux"
 
 export default function Albums({ params }) {
@@ -14,23 +15,21 @@ export default function Albums({ params }) {
   //console.log(albumData)
 
   return (
-    <div>
+    <ul className="flex flex-col gap-2 mt-8">
       {
         albumData.songs.map((song) => {
           return (
-            <div key={song.id}>
-              <span className="font-medium text-indigo-500">
-                {song.title}
-              </span>
-              <span className="text-xs text-gray-500 font-semibold">
-                {song.artists}
-              </span>
-            </div>
+            <Song 
+            key={song.id} 
+            title={song.title} 
+            artists={song.artists} 
+            cover={song.cover}
+            number={song.id}
+            />
           )
         })
       }
-
-    </div>
+    </ul>
 
   )
 }
