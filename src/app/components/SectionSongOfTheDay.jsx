@@ -19,7 +19,7 @@ export function SectionSongOfTheDay ({ albums }) {
                 {
                   album.songs.slice(0, 1).map((song) => {
                     return (
-                      <div key={song.id} className="flex flex-col items-center justify-center max-w-full bg-gray-100 rounded-lg pt-4 shadow-md hover:scale-105 duration-200">
+                      <div key={song.id} className="flex flex-col items-center justify-center max-w-full bg-gray-100 rounded-lg pt-4 shadow-md">
                         <img 
                         className="w-[400px] h-[200px] rounded-lg"
                         src={song.cover} 

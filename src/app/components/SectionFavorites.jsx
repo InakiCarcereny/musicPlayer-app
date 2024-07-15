@@ -8,6 +8,7 @@ import { useSelector } from "react-redux"
 
 export function SectionFavorites () {
   const playlists = useSelector(state => state.playlists)
+  //console.log(playlists)
   const { removePlaylist } = usePlaylistActions()  
 
   return (
