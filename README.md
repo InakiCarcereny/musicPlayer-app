@@ -1,4 +1,4 @@
-.[!important]
+
 ## Instalación
 
 1- Clonar el repositorio: `git clone https://github.com/InakiCarcereny/musicPlayer-app.git`
