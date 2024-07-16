@@ -14,6 +14,9 @@ export default function Albums({ params }) {
   const albumData = album.find(album => album.id === albumId)
   //console.log(albumData)
 
+  //const filterSongs = albumData.songs.filter((song) => song.id === albumId)
+  //console.log(filterSongs)
+
   return (
     <ul className="flex flex-col gap-2 mt-8">
       {
@@ -30,6 +33,5 @@ export default function Albums({ params }) {
         })
       }
     </ul>
-
   )
 }
