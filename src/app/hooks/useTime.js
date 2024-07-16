@@ -9,7 +9,7 @@ export function useTime () {
 
   useEffect(() => {
 
-    if (time >= 6 && time < 12) {
+    if (time >= 1 && time < 12) {
       setPhase('Good Morning')
     }
 
