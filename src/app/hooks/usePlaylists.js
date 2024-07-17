@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { usePlaylistActions } from "../../redux/features/playlists/usePlaylistActions"
+import { toast } from "sonner"
 
 export function usePlaylists () {
   const [clicked, setClicked] = useState(false)
@@ -21,6 +22,7 @@ export function usePlaylists () {
     setPlaylistName("")
     //console.log(addPlaylist, "addPlaylist")
     //console.log(playlistName, "playlistName")
+    toast.success("Playlist created successfully")
   }
 
   return { playlistName, handlePlaylistName, clicked, handleClick, handleSubmit}

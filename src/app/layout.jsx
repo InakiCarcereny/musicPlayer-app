@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NavLinks } from "./components/NavLinks";
 import { Providers } from "../redux/provider";
+import { Toaster } from "sonner";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -18,6 +19,8 @@ export default function RootLayout({ children }) {
         <Providers>
           <main className="flex flex-col flex-1 mx-4 sm:mx-0">
             {children}
+
+            <Toaster position="bottom-center"/>
           </main>
         </Providers>
 
