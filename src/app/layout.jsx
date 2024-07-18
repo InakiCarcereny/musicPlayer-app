@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <main className="flex flex-col flex-1 mx-4 sm:mx-0">
             {children}
 
-            <Toaster position="bottom-center"/>
+            <Toaster position="bottom-right"/>
           </main>
         </Providers>
 
