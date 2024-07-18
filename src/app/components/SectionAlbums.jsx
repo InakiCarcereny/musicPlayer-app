@@ -2,7 +2,7 @@
 
 import { useSelector } from "react-redux"
 import { Album } from "./Album"
-import { Carousel, CarouselPrevious, CarouselContent, CarouselItem, CarouselNext } from "@/components/ui/carousel";
+import { Carousel, CarouselPrevious, CarouselContent, CarouselNext } from "@/components/ui/carousel";
 
 export function SectionAlbums () {
   const album = useSelector(state => state.albums.albums)

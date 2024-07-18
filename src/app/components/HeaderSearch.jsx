@@ -23,7 +23,7 @@ export function HeaderSearch () {
 
   return (
     <header className="flex flex-col pt-4 gap-6">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4"> 
         <Image
         className="rounded-full"
         src="/user.jpeg" 
