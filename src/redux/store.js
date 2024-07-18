@@ -15,7 +15,8 @@ export const store = configureStore({
   reducer: {
     albums: albumsReducer,
     playlists: playlistsReducer,
-    recentSongs: recentSongsReducer
+    recentSongs: recentSongsReducer,
+    favorites: favoritesReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(persistanceMiddleware)
 })
