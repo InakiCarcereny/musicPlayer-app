@@ -1,22 +1,16 @@
-import { useState } from "react"
-import { PlayIcon } from "../icons/PlayIcon"
-import { PauseIcon } from "../icons/PauseIcon"
-
-import { useRecentSongsActions } from "../../redux/features/recentsongs/useRecentSongsActions"
-import { Heart } from "lucide-react"
+import { useFavoritesActions } from "../../redux/features/favorites/useFavoritesActions"
+import { useSong } from "../hooks/useSong"
 import { HearthIcon } from "../icons/HearthIcon"
 import { toast } from "sonner"
 
 export function Song ({ title, artists, cover, number }) {
-  const [playing, setPlaying] = useState(false)
-  const icon = playing ? <PauseIcon /> : <PlayIcon />
+  const { icon, handleSong } = useSong({ title, artists, cover, number })
 
-  const { addRecentSong } = useRecentSongsActions()
+  const { addFavorite } = useFavoritesActions()
 
-  const handleSong = () => {
-    setPlaying(!playing)
-    addRecentSong({ song: { title, artists, cover, number } })
-    //console.log(addRecentSong, "addRecentSong")
+  const handleFavorite = () => {
+    toast.success(`${title} added to your favorites`)
+    addFavorite({ song: { title, artists, cover, number } })
   }
 
   return (
@@ -39,7 +33,7 @@ export function Song ({ title, artists, cover, number }) {
       </div>
 
       <div className="flex items-center gap-4">
-        <button onClick={() => toast.success(`${title} added to your favorites`)}>
+        <button onClick={handleFavorite}>
           <HearthIcon />
         </button>
         <button onClick={handleSong} className=" cursor-pointer">
