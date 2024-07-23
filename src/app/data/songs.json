@@ -11,7 +11,9 @@
           "id": 1,
           "title": "No Love",
           "artists": "Anuel AA, Spiff TV",
-          "cover": "https://imgs.search.brave.com/MuKKXSjb549evWrdLLmYboXls8D33DB0ESDdqM2SVFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLWF4Z1dN/ZUF2bHNtci0wLXQ1/MDB4NTAwLmpwZw"
+          "cover": "https://imgs.search.brave.com/MuKKXSjb549evWrdLLmYboXls8D33DB0ESDdqM2SVFs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMS5z/bmRjZG4uY29tL2Fy/dHdvcmtzLWF4Z1dN/ZUF2bHNtci0wLXQ1/MDB4NTAwLmpwZw",
+          "playing": false,
+          "favorite": false
         },
         {
           "id": 2,
