@@ -8,10 +8,13 @@ export const favoritesSlice = createSlice({
   reducers: {
     addFavorite: (state, action) => {
       state.push(action.payload)
+    },
+    removeFavorite: (state, action) => {
+      state.splice(action.payload, 1)
     }
   }
 })
 
-export const { addFavorite } = favoritesSlice.actions
+export const { addFavorite, removeFavorite } = favoritesSlice.actions
 
 export default favoritesSlice.reducer

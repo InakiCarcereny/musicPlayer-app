@@ -1,10 +1,12 @@
 import { useDispatch } from "react-redux"
-import { addFavorite } from "./favoritesSlice"
+import { addFavorite, removeFavorite } from "./favoritesSlice"
 
 export function useFavoritesActions () {
   const dispatch = useDispatch()
 
   const addFavorites = ({ song }) => dispatch(addFavorite({ song }))
 
-  return { addFavorite: addFavorites }
+  const removeFavorites = ( { indice } ) => dispatch(removeFavorite( { indice } ))
+
+  return { addFavorite: addFavorites, removeFavorite: removeFavorites }
 }

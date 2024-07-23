@@ -18,7 +18,7 @@ export function Song ({ title, artists, cover, number }) {
       <div className="flex items-center gap-6">
         <span className="font-semibold">{number}</span>
         <img 
-        className="w-[60px] h-[60px] rounded-lg"
+        className="w-[60px] h-[60px] rounided-lg"
         src={cover}
         alt={title} />
         
