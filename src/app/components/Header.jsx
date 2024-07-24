@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { SearchIcon } from "@/app/icons/SearchIcon";
 import { useTime } from "@/app/hooks/useTime";
+import Link from "next/link";
 
 export function Header() {
   const { phase } = useTime()
@@ -20,9 +21,9 @@ export function Header() {
           {phase}
         </span>
 
-        <div className="bg-gray-100 rounded-full py-1 px-3">
+        <Link href={"/routes/search"} className="bg-gray-100 rounded-full py-1 px-3">
           <SearchIcon />
-        </div>
+        </Link>
       </header>
   )
 }
