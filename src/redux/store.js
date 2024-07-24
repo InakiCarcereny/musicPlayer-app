@@ -6,8 +6,7 @@ import  recentSongsReducer  from './features/recentsongs/recentSongsSlice'
 
 const persistanceMiddleware = store => next => action => {
   next(action)
-  const { playlists } = store.getState()
-  localStorage.setItem('redux-playlists', JSON.stringify(playlists))
+  localStorage.setItem('redux_state', JSON.stringify(store.getState()))
   //console.log(playlists)
 }
 

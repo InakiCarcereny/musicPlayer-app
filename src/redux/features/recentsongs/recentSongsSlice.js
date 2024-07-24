@@ -1,6 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = []
+const initialState = (() => {
+  const recentSongs = localStorage.getItem('redux_state')
+  const persistedRecentSongs = JSON.parse(recentSongs).recentSongs
+  return persistedRecentSongs || []
+})
 
 export const recentSongsSlice = createSlice({
   name: 'recentSongs',
