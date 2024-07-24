@@ -1,7 +1,7 @@
 'use client'
 
 import { useSelector } from "react-redux"
-import { PauseIcon } from "../icons/PauseIcon"
+import { PlayIcon } from "../icons/PlayIcon"
 
 export function SectionRecentSongs () {
   const recentSongs = useSelector(state => state.recentSongs)
@@ -32,7 +32,7 @@ export function SectionRecentSongs () {
               </div>
 
               <span>
-                <PauseIcon />
+                <PlayIcon />
               </span>
             </li>
           ))
