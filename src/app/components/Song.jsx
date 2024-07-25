@@ -2,11 +2,12 @@ import { useFavoritesActions } from "../../redux/features/favorites/useFavorites
 import { useSong } from "../hooks/useSong"
 import { HearthIcon } from "../icons/HearthIcon"
 import { toast } from "sonner"
+import { HearthIconFilled } from "../icons/HearthIconFilled"
 
-export function Song ({ title, artists, cover, number }) {
+export function Song ({ title, artists, cover, number, isFavorite }) {
   const { icon, handleSong } = useSong({ title, artists, cover, number })
 
-  const { addFavorite } = useFavoritesActions()
+  const { addFavorite, removeFavorite } = useFavoritesActions()
 
   const handleFavorite = () => {
     toast.success(`${title} added to your favorites`)
@@ -18,7 +19,7 @@ export function Song ({ title, artists, cover, number }) {
       <div className="flex items-center gap-6">
         <span className="font-semibold">{number}</span>
         <img 
-        className="w-[60px] h-[60px] rounided-lg"
+        className="w-[60px] h-[60px] rounded-lg"
         src={cover}
         alt={title} />
         
@@ -33,8 +34,16 @@ export function Song ({ title, artists, cover, number }) {
       </div>
 
       <div className="flex items-center gap-4">
-        <button onClick={handleFavorite}>
-          <HearthIcon />
+        <button onClick={() => {
+          isFavorite 
+          ? removeFavorite({indice: number}) 
+          : handleFavorite()
+        }}>
+          {
+          isFavorite
+          ? <HearthIconFilled />
+          : <HearthIcon /> 
+          }
         </button>
         <button onClick={handleSong} className=" cursor-pointer">
           {icon}
