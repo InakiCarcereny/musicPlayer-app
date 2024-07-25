@@ -18,7 +18,7 @@ export function SongFavorites ( { title, artists, cover, number, isFavorite, rem
       </div>
     </div>
 
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-8">
       <span
       className="cursor-pointer"
       onClick={() => removeFavorite({indice: number})}>

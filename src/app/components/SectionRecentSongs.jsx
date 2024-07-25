@@ -15,7 +15,7 @@ export function SectionRecentSongs () {
 
       <ul className="mt-4 flex flex-col gap-4">
         {
-          recentSongs.slice(0, 10).map(({song: {title, number, cover, artists}}) => (
+          recentSongs.slice(0, 5).map(({song: {title, number, cover, artists}}) => (
             <li 
             className="bg-gray-100 rounded-full flex items-center justify-between w-full px-2 py-2"
             key={number}>
