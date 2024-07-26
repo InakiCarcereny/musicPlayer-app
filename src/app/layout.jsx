@@ -3,6 +3,7 @@ import "./globals.css";
 import { NavLinks } from "./components/NavLinks";
 import { Providers } from "../redux/provider";
 import { Toaster } from "sonner";
+import { Player } from "./components/Player";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -19,14 +20,16 @@ export default function RootLayout({ children }) {
         <Providers>
           <main className="flex flex-col flex-1 mx-4 sm:mx-0">
             {children}
-
             <Toaster position="bottom-right"/>
           </main>
-        </Providers>
+        
 
-        <footer className="max-w-[600px] mx-auto w-full flex fixed bottom-0 left-0 right-0 items-center justify-center gap-12 shadow-xl bg-gray-100 rounded-tr-xl rounded-tl-xl pt-4">
-          <NavLinks />
-        </footer>  
+          <footer className="max-w-[600px] mx-auto w-full flex fixed bottom-0 left-0 right-0 items-center justify-center gap-12 shadow-xl bg-gray-100 rounded-tr-xl rounded-tl-xl pt-4">
+            <NavLinks />
+          </footer>
+
+          <Player />
+        </Providers>
       </body>
     </html>
   );

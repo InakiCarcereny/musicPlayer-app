@@ -3,6 +3,7 @@ import  albumsReducer  from './features/albums/almbumsSlice'
 import  playlistsReducer  from './features/playlists/playlistsSlice'
 import  favoritesReducer  from './features/favorites/favoritesSlice'
 import  recentSongsReducer  from './features/recentsongs/recentSongsSlice'
+import  playerReducer  from './features/player/playerSlice'
 
 const persistanceMiddleware = store => next => action => {
   next(action)
@@ -15,7 +16,8 @@ export const store = configureStore({
     albums: albumsReducer,
     playlists: playlistsReducer,
     recentSongs: recentSongsReducer,
-    favorites: favoritesReducer
+    favorites: favoritesReducer,
+    player: playerReducer
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(persistanceMiddleware)
 })
