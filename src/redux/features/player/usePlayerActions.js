@@ -1,12 +1,16 @@
 import { useDispatch } from "react-redux"
-import { pauseSong, playSong } from "./playerSlice"
+import { pauseSong, playSong, setCurrentSong, setPlaying } from "./playerSlice"
 
 export function usePlayerActions () {
   const dispatch = useDispatch()
 
-  const playSongs = ({ song}) => dispatch(playSong({ song }))
+  const playSongs = ({ song }) => dispatch(playSong({ song }))
 
   const pauseSongs = () => dispatch(pauseSong())
 
-  return { playSong: playSongs, pauseSong: pauseSongs }
+  const setIsPlaying = ({ playing }) => dispatch(setPlaying({ playing }))
+
+  const setIsCurrentSong = ({ song }) => dispatch(setCurrentSong({ song}))
+
+  return { playSong: playSongs, pauseSong: pauseSongs, setPlaying: setIsPlaying, setCurrentSong: setIsCurrentSong }
 }
