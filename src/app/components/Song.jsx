@@ -4,8 +4,8 @@ import { HearthIcon } from "../icons/HearthIcon"
 import { toast } from "sonner"
 import { HearthIconFilled } from "../icons/HearthIconFilled"
 
-export function Song ({ title, artists, cover, number, isFavorite, albumId }) {
-  const { icon, handleSong } = useSong({ title, artists, cover, number, albumId })
+export function Song ({ title, artists, cover, number, isFavorite, index }) {
+  const { icon, handleSong } = useSong({ title, artists, cover, number })
 
   const { addFavorite, removeFavorite } = useFavoritesActions()
 
@@ -17,7 +17,7 @@ export function Song ({ title, artists, cover, number, isFavorite, albumId }) {
   return (
     <li className="flex items-center justify-between hover:bg-gray-100 hover:rounded-lg px-2 py-2">
       <div className="flex items-center gap-6">
-        <span className="font-semibold">{number}</span>
+        <span className="font-semibold">{index + 1}</span>
         <img 
         className="w-[60px] h-[60px] rounded-lg"
         src={cover}
