@@ -16,10 +16,6 @@ export function SectionFavorites () {
   
   const { removeFavorite } = useFavoritesActions()
 
-  const checkFavorite = (song) => { 
-    return favorites.some(favorite => favorite.song.number === song.number)
-   }
-
   return (
     <section className="mt-6">
       <Filters />
@@ -42,8 +38,6 @@ export function SectionFavorites () {
       <ul className="mt-2 flex flex-col gap-1 mb-24">
         {
           favorites.map(({song: {title, artists, cover, number}}) => {
-            const isFavorite = checkFavorite({title, artists, cover, number})
-
             return (
               <SongFavorites
               key={number} 
@@ -51,7 +45,6 @@ export function SectionFavorites () {
               artists={artists} 
               cover={cover} 
               number={number} 
-              isFavorite={isFavorite} 
               removeFavorite={removeFavorite} />
             )
           })
