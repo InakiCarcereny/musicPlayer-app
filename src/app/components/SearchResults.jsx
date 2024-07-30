@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import { useSelector } from "react-redux"
 
 export function SearchResults ( { query } ) {
@@ -16,7 +17,8 @@ export function SearchResults ( { query } ) {
       <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {
           filterAlbums.map((album) => (
-            <li 
+            <Link
+            href={`/routes/albums/${album.id}`}
             className="bg-gray-100 rounded-lg flex justify-between object-contain overflow-hidden"
             key={album.id}>
               <span className="font-medium text-indigo-500 px-2 py-2">{album.artist}</span>
@@ -25,7 +27,7 @@ export function SearchResults ( { query } ) {
               src={album.cover}
               alt={album.artist} 
               />
-            </li>
+            </Link>
           ))
         }
       </ul>
