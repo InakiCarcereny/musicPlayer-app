@@ -5,9 +5,12 @@ import { PauseIcon } from "../icons/PauseIcon";
 import { useSelector } from "react-redux";
 import { PlayIcon } from "../icons/PlayIcon";
 import { useEffect, useRef } from "react";
+import { useSong } from "../hooks/useSong";
+import { CurrentSong } from "./CurrentSong";
 
-export function Player () {
+export function Player ({ title, artists, cover, number, albumId }) {
   const { playing, currentSong, volume } = useSelector(state => state.player)
+  const { handleSong } = useSong({ title, artists, cover, number, albumId })
 
   const playerRef = useRef(null)
 
@@ -25,24 +28,15 @@ export function Player () {
   }
 
   return (
-    <div className={`mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[80px] rounded-lg bg-zinc-900 flex items-center justify-between px-2 py-2}`}>
-      <div className="flex items-center gap-2">
-        <Image 
-        className="w-[60px] h-[60px] rounded-lg"
-        src="/user.jpeg" 
-        alt="user" 
-        width={50} 
-        height={50} />
-        <p>
-          name of the song
-        </p>
-      </div>
+    <div className={`mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[80px] rounded-lg bg-gray-100 flex items-center justify-between px-2 py-2}`}>
+      <CurrentSong {...currentSong.song} />
       <button 
-      onClick={handlePlay}
+      onClick={handleSong}
       className="font-medium text-indigo-500">
-        {playing
-          ? <PauseIcon />
-          : <PlayIcon />
+        {
+          playing 
+            ? <PauseIcon />
+            : <PlayIcon />
         }
       </button>
 

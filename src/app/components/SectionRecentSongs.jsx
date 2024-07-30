@@ -2,12 +2,17 @@
 
 import { useSelector } from "react-redux"
 import { PlayIcon } from "../icons/PlayIcon"
+import { PauseIcon } from "../icons/PauseIcon"
+import { useSong } from "../hooks/useSong"
 
-export function SectionRecentSongs () {
+export function SectionRecentSongs ({ title, artists, cover, number, albumId }) {
   const recentSongs = useSelector(state => state.recentSongs)
+  const { playing } = useSelector(state => state.player)
+
+  const { handleSong, setPlayingId } = useSong({ title, artists, cover, number, albumId })
 
   return (
-    <section className="mt-8 mb-24">
+    <section className="mt-8 mb-44">
       <h2 className="font-bold text-xl">
         Recent Played
       </h2>
@@ -30,9 +35,13 @@ export function SectionRecentSongs () {
                 </div>
               </div>
 
-              <span>
-                <PlayIcon />
-              </span>
+              <button onClick={handleSong} className="cursor-pointer">
+                {
+                  setPlayingId
+                    ? <PauseIcon />
+                    : <PlayIcon />
+                }
+              </button>
             </li>
           ))
         }

@@ -4,7 +4,7 @@ import { useRecentSongsActions } from "@/redux/features/recentsongs/useRecentSon
 import { usePlayerActions } from "@/redux/features/player/usePlayerActions"
 import { useSelector } from "react-redux"
 
-export function useSong ({ title, artists, cover, number }) {
+export function useSong ({ title, artists, cover, number, albumId }) {
   const player = useSelector(state => state.player)
 
   const { addRecentSong } = useRecentSongsActions()
@@ -18,13 +18,18 @@ export function useSong ({ title, artists, cover, number }) {
   const handleSong = () => {
     setCurrentSong({
       song: {
-        id: number
+        id: number,
+        title: title,
+        artists: artists,
+        cover: cover
       }
     })
     setPlaying(setPlayingId)
     addRecentSong({ song: { title, artists, cover, number } })
-    player.playing ? pauseSong() : playSong({ song: { title, artists, cover, number } })
+    setPlayingId 
+    ? pauseSong() 
+    : playSong()
   }
 
-  return { icon, handleSong }
+  return { icon, handleSong, setPlayingId }
 }

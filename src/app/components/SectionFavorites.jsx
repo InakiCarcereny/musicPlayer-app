@@ -35,7 +35,7 @@ export function SectionFavorites () {
         }
       </ul>
 
-      <ul className="mt-2 flex flex-col gap-1 mb-24">
+      <ul className="mt-2 flex flex-col gap-1 mb-44">
         {
           favorites.map(({song: {title, artists, cover, number}}) => {
             return (
