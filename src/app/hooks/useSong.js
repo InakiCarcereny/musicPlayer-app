@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { PauseIcon } from "../icons/PauseIcon"
 import { PlayIcon } from "../icons/PlayIcon"
 import { useRecentSongsActions } from "@/redux/features/recentsongs/useRecentSongsActions"
@@ -24,9 +23,8 @@ export function useSong ({ title, artists, cover, number }) {
     })
     setPlaying(setPlayingId)
     addRecentSong({ song: { title, artists, cover, number } })
-    //console.log(addRecentSong, "addRecentSong")
     player.playing ? pauseSong() : playSong({ song: { title, artists, cover, number } })
   }
 
-  return { icon, handleSong}
+  return { icon, handleSong }
 }

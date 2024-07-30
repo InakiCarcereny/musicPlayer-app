@@ -11,7 +11,7 @@ import { SongFavorites } from "./SongFavorites";
 export function SectionFavorites () {
   const playlists = useSelector(state => state.playlists)
   const favorites = useSelector(state => state.favorites)
-  //console.log(playlists)
+
   const { removePlaylist } = usePlaylistActions() 
   
   const { removeFavorite } = useFavoritesActions()

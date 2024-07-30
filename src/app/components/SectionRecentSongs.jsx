@@ -5,7 +5,6 @@ import { PlayIcon } from "../icons/PlayIcon"
 
 export function SectionRecentSongs () {
   const recentSongs = useSelector(state => state.recentSongs)
-  //console.log(recentSongs)
 
   return (
     <section className="mt-8 mb-24">

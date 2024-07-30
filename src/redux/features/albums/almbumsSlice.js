@@ -12,13 +12,7 @@ const initialState = {
 export const albumsSlice = createSlice({
   name: 'albums',
   initialState,
-  reducers: {
-    setAlbums: (state, action) => {
-      state.albums = action.payload
-    }
-  }
+  reducers: {}
 })
-
-const { setAlbums } = albumsSlice.actions
 
 export default albumsSlice.reducer
