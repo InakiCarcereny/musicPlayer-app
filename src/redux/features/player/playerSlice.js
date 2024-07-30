@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    playing: null,
+    playing: false,
     currentSong: {
       song: null,
     },
