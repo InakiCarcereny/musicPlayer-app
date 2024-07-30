@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           </main>
         
 
-          <footer className="max-w-[600px] mx-auto w-full flex fixed bottom-0 left-0 right-0 items-center justify-center gap-12 shadow-xl bg-gray-100 rounded-tr-xl rounded-tl-xl pt-4">
+          <footer className="max-w-[600px] mx-auto w-full flex fixed bottom-0 left-0 right-0 items-center justify-center gap-12 shadow-xl bg-gray-100/60 rounded-tr-xl rounded-tl-xl pt-4">
             <NavLinks />
           </footer>
 

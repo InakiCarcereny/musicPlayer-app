@@ -18,17 +18,8 @@ export function Player ({ title, artists, cover, number, albumId }) {
     playerRef.current.src = `/tracks/5/02.mp3`
   }, [])
 
-  const handlePlay = () => {
-    if (playing === false) {
-      playerRef.current.play()
-      playerRef.current.volume = 0.2
-    } else {
-      playerRef.current.pause()
-    }
-  }
-
   return (
-    <div className={`mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[80px] rounded-lg bg-gray-100 flex items-center justify-between px-2 py-2}`}>
+    <div className={`mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[70px] rounded-lg bg-gray-100 flex items-center justify-between px-2 py-2}`}>
       <CurrentSong {...currentSong.song} />
       <button 
       onClick={handleSong}
