@@ -26,8 +26,8 @@ export function SectionFavorites () {
 
             return (
               <PlaylistFolder 
-              key={playlists.playlistName} 
-              playlistName={playlists.playlistName} 
+              key={playlists.name} 
+              name={playlists.name}
               indice={playlists.indice} 
               removePlaylist={removePlaylist} />
             )

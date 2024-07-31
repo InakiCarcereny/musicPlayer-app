@@ -23,7 +23,7 @@ export function Song ({ title, artists, cover, number, isFavorite, index }) {
         src={cover}
         alt={title} />
         
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           <span className="font-medium text-indigo-500">
             {title}
           </span>
@@ -36,7 +36,7 @@ export function Song ({ title, artists, cover, number, isFavorite, index }) {
       <div className="flex items-center gap-4">
         <button onClick={() => {
           isFavorite 
-          ? removeFavorite({indice: number}) 
+          ? removeFavorite(number)
           : handleFavorite()
         }}>
           {

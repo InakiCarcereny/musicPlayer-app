@@ -6,7 +6,7 @@ export function useFavoritesActions () {
 
   const addFavorites = ({ song }) => dispatch(addFavorite({ song }))
 
-  const removeFavorites = ( { indice } ) => dispatch(removeFavorite( { indice } ))
+  const removeFavorites = (indice) => dispatch(removeFavorite({indice}))
 
   return { addFavorite: addFavorites, removeFavorite: removeFavorites }
 }

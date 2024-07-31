@@ -20,7 +20,7 @@ export function SongFavorites ( { title, artists, cover, number, removeFavorite 
     <div className="flex items-center gap-8">
       <span
       className="cursor-pointer"
-      onClick={() => removeFavorite({indice: number})}>
+      onClick={() => removeFavorite(number)}>
         <HearthIconFilled />
       </span>
       <span>

@@ -14,7 +14,7 @@ export const favoritesSlice = createSlice({
       state.push(action.payload)
     },
     removeFavorite: (state, action) => {
-      state.splice(action.payload, 1)
+      return state.filter(favorite => favorite.song.number !== action.payload.indice)
     }
   }
 })
