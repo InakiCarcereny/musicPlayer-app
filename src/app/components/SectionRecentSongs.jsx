@@ -1,15 +1,10 @@
 'use client'
 
 import { useSelector } from "react-redux"
-import { PlayIcon } from "../icons/PlayIcon"
 import { PauseIcon } from "../icons/PauseIcon"
-import { useSong } from "../hooks/useSong"
 
-export function SectionRecentSongs ({ title, artists, cover, number, albumId }) {
+export function SectionRecentSongs () {
   const recentSongs = useSelector(state => state.recentSongs)
-  const { playing } = useSelector(state => state.player)
-
-  const { handleSong, setPlayingId } = useSong({ title, artists, cover, number, albumId })
 
   return (
     <section className="mt-8 mb-44">
@@ -19,10 +14,10 @@ export function SectionRecentSongs ({ title, artists, cover, number, albumId }) 
 
       <ul className="mt-4 flex flex-col gap-4">
         {
-          recentSongs.slice(0, 5).map(({song: {title, number, cover, artists}}) => (
+          recentSongs.map(({song: {title, number, cover, artists}}, index) => (
             <li 
             className="bg-gray-100 rounded-full flex items-center justify-between w-full px-2 py-2"
-            key={number}>
+            key={index}>
               <div className="flex items-center gap-4">
                 <img 
                 className="w-[60px] h-[60px] rounded-full"
@@ -35,12 +30,8 @@ export function SectionRecentSongs ({ title, artists, cover, number, albumId }) 
                 </div>
               </div>
 
-              <button onClick={handleSong} className="cursor-pointer">
-                {
-                  setPlayingId
-                    ? <PauseIcon />
-                    : <PlayIcon />
-                }
+              <button className="cursor-pointer">
+                <PauseIcon />
               </button>
             </li>
           ))
