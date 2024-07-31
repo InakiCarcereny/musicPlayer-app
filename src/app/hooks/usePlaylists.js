@@ -18,12 +18,12 @@ export function usePlaylists () {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    addPlaylist({ playlistName })
+    addPlaylist(playlistName)
     setPlaylistName("")
     //console.log(addPlaylist, "addPlaylist")
     //console.log(playlistName, "playlistName")
     toast.success("Playlist created successfully")
   }
 
-  return { playlistName, handlePlaylistName, clicked, handleClick, handleSubmit}
+  return { playlistName, handlePlaylistName, clicked, handleClick, handleSubmit }
 }
