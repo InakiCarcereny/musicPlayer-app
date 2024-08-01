@@ -13,7 +13,7 @@ export function Album({ id, name, artist, cover, subtitle }) {
         src={cover} 
         alt={name} />
 
-        <div className="flex flex-col gap-1 pt-2">
+        <div className="flex flex-col pt-2">
           <span className="font-medium whitespace-nowrap overflow-hidden text-ellipsis text-md text-indigo-500">
             {name}
           </span>

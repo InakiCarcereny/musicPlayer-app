@@ -15,19 +15,19 @@ export function SectionSongOfTheDay () {
       </h2>
 
       <div className="mt-4">
-        <div key={song.id} className="flex flex-col items-center justify-center max-w-full bg-gray-100 rounded-lg pt-4 shadow-md">
+        <div key={song.id} className="flex flex-col items-center justify-center max-w-[200px] h-[200px] rounded-lg shadow-md relative">
           <img 
-          className="w-[400px] h-[200px] rounded-lg"
+          className="rounded-lg object-fill"
           src={song.cover} 
           alt={song.title} />
-          <div className="flex items-center justify-center gap-2 pt-2">
-            <span className="font-medium text-indigo-500">
+          <div className="flex items-center justify-center gap-2 pt-2 absolute bottom-5">
+            <span className="font-medium text-white">
               {song.title}
             </span>
-            <span className="text-xs text-gray-500 font-semibold">
+            <span className="text-xs text-white font-semibold">
               ●
             </span>
-            <span className="text-xs text-gray-500 font-semibold">
+            <span className="text-xs text-white font-semibold">
               {song.artists}
             </span>
           </div>

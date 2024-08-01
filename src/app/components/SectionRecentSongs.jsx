@@ -2,6 +2,7 @@
 
 import { useSelector } from "react-redux"
 import { PauseIcon } from "../icons/PauseIcon"
+import { PlayIcon } from "../icons/PlayIcon"
 
 export function SectionRecentSongs () {
   const recentSongs = useSelector(state => state.recentSongs)
@@ -14,13 +15,13 @@ export function SectionRecentSongs () {
 
       <ul className="mt-4 flex flex-col gap-4">
         {
-          recentSongs.map(({song: {title, number, cover, artists}}, index) => (
+          recentSongs.map(({song: {title, cover, artists}}, index) => (
             <li 
-            className="bg-gray-100 rounded-full flex items-center justify-between w-full px-2 py-2"
+            className="bg-gray-100 rounded-lg flex items-center justify-between w-full px-2 py-2"
             key={index}>
               <div className="flex items-center gap-4">
                 <img 
-                className="w-[60px] h-[60px] rounded-full"
+                className="w-[60px] h-[60px] rounded-lg"
                 src={cover} 
                 alt={title} />
 
@@ -31,7 +32,7 @@ export function SectionRecentSongs () {
               </div>
 
               <button className="cursor-pointer">
-                <PauseIcon />
+                <PlayIcon />
               </button>
             </li>
           ))
