@@ -15,10 +15,13 @@ export const favoritesSlice = createSlice({
     },
     removeFavorite: (state, action) => {
       return state.filter(favorite => favorite.song.number !== action.payload.indice)
+    },
+    setFavorite: (state, action) => {
+      return action.payload
     }
   }
 })
 
-export const { addFavorite, removeFavorite } = favoritesSlice.actions
+export const { addFavorite, removeFavorite, setFavorite } = favoritesSlice.actions
 
 export default favoritesSlice.reducer
