@@ -6,10 +6,7 @@ import { PlayIcon } from "../icons/PlayIcon";
 import { useEffect, useRef, useState } from "react";
 import { useSong } from "../hooks/useSong";
 import { CurrentSong } from "./CurrentSong";
-import { ArrowDownIcon } from "../icons/ArrowDownIcon";
-import { Prev } from "../icons/Prev";
-import { Next } from "../icons/Next";
-import { Slider } from "@/components/ui/slider";
+import { Modal } from "./Modal";
 
 export function Player ({ title, artists, cover, number, albumId }) {
   const { playing, currentSong, volume } = useSelector(state => state.player)
@@ -45,40 +42,10 @@ export function Player ({ title, artists, cover, number, albumId }) {
       </div>
       
       {
-        open &&
-        <div className="h-screen w-[600px] bg-zinc-300 absolute flex flex-col">
-          <header className="mt-4 ml-4 flex items-center gap-4">
-            <button onClick={handleOpen}>
-              <ArrowDownIcon />
-            </button>
-            <span className="text-base font-bold">
-              PLAYING FROM ALBUMS
-            </span>
-          </header>
-          <section className="flex flex-col items-center justify-center mt-16 gap-8">
-            <div className="flex flex-col items-center gap-1">
-              <span className="font-semibold text-indigo-500 text-2xl">
-                {currentSong.song.title}
-              </span>
-              <p className="text-sm text-gray-500 font-semibold">
-                {currentSong.song.artists}
-              </p>
-            </div>
-            <img 
-            className="w-[400px] h-[400px] rounded-lg"
-            src={currentSong.song.cover}/>
-            <div className="mt-8">
-              <Slider 
-              className="w-[500px]"
-              />
-            </div>
-          </section>
-          <footer className="mt-4 flex items-center justify-center gap-4">
-            <Prev />
-            <PlayIcon />
-            <Next />
-          </footer>
-        </div>
+        open && <Modal
+        handleOpen={handleOpen}
+        {...currentSong.song}
+        />
       }
     </>
   )
