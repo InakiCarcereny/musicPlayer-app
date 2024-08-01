@@ -1,20 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { act } from 'react'
 
-const initialState = (() => {
+const initialState = () => {
   const playlists = localStorage.getItem('redux_state')
   const persistedPlaylists = JSON.parse(playlists).playlists
   return persistedPlaylists || []
-})
+}
 
 export const playlistsSlice = createSlice({
   name: 'playlists',
   initialState,
   reducers: {
     addPlaylist: (state, action) => {
-      state.push(action.payload)
+      const ID = crypto.randomUUID()
+      return [...state, { id: ID, ...action.payload }]
     },
     removePlaylist: (state, action) => {
-      state.splice(action.payload, 1)
+      return state.filter(playlist => playlist.id !== action.payload.id)
   }
 }
 })

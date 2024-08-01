@@ -28,7 +28,7 @@ export function SectionFavorites () {
               <PlaylistFolder 
               key={playlists.name} 
               name={playlists.name}
-              indice={playlists.indice} 
+              id={playlists.id}
               removePlaylist={removePlaylist} />
             )
           })

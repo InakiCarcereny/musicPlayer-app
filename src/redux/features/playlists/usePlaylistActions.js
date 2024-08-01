@@ -7,7 +7,7 @@ export function usePlaylistActions () {
 
   const addPlaylists = ( name ) => dispatch(addPlaylist({name}))
 
-  const removePlaylists = ( indice ) => dispatch(removePlaylist({indice}))
+  const removePlaylists = ( id ) => dispatch(removePlaylist({id}))
 
   return { addPlaylist: addPlaylists , removePlaylist: removePlaylists }
 }
