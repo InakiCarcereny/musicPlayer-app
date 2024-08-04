@@ -26,7 +26,7 @@ export function Player ({ title, artists, cover, number, albumId }) {
 
   return (
     <>
-      <div onClick={handleOpen} className={`mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[70px] rounded-lg bg-gray-100 flex items-center justify-between px-2 py-2}`}>
+      <div onClick={handleOpen} className="mx-auto fixed bottom-[84px] left-0 right-0 max-w-[600px] h-[70px] rounded-lg bg-gray-100 flex items-center justify-between px-2 py-2 cursor-pointer">
         <CurrentSong {...currentSong.song} />
         <button 
         onClick={handleSong}
