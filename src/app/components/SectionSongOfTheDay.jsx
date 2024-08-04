@@ -15,9 +15,9 @@ export function SectionSongOfTheDay () {
       </h2>
 
       <div className="mt-4">
-        <div key={song.id} className="flex flex-col items-center justify-center max-w-[200px] h-[200px] rounded-lg shadow-md relative">
+        <div key={song.id} className="flex flex-col items-center justify-center max-w-[600px] h-[300px] rounded-lg shadow-md relative">
           <img 
-          className="rounded-lg object-fill"
+          className="rounded-lg object-fill w-full h-full"
           src={song.cover} 
           alt={song.title} />
           <div className="flex items-center justify-center gap-2 pt-2 absolute bottom-5">
