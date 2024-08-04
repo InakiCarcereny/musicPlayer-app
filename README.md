@@ -18,6 +18,15 @@
 - Tailwind CSS
 - React
 
+## Librerías
+
+- Sonner
+- Shadcn UI
+
+## Testing
+
+- Jest
+
 ## Autor
 
 [Inaki Carcereny](https://github.com/InakiCarcereny)
