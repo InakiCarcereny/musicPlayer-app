@@ -1,11 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { act } from 'react'
 
-const initialState = () => {
-  const playlists = localStorage.getItem('redux_state')
+const initialState = (() => {
+  const playlists = window.localStorage.getItem('redux_state')
   const persistedPlaylists = JSON.parse(playlists).playlists
   return persistedPlaylists || []
-}
+})
 
 export const playlistsSlice = createSlice({
   name: 'playlists',
