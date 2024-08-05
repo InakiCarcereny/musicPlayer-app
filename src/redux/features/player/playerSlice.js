@@ -5,7 +5,7 @@ const initialState = {
     currentSong: {
       song: null,
     },
-    volume: 0.2
+    volume: 0.1
   }
 
 export const playerSlice = createSlice({
