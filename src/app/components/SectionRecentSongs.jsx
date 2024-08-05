@@ -1,7 +1,6 @@
 'use client'
 
 import { useSelector } from "react-redux"
-import { PauseIcon } from "../icons/PauseIcon"
 import { PlayIcon } from "../icons/PlayIcon"
 
 export function SectionRecentSongs () {
