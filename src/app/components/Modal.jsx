@@ -6,8 +6,7 @@ import { PauseIcon } from "../icons/PauseIcon";
 import { Slider } from "@/components/ui/slider";
 import { useEffect, useState } from "react";
 
-export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing, nextSong, prevSong, albumId, audio }) {
-
+export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing, nextSong, prevSong, albumId, audio, id }) {
   const [currentTime, setCurrentTime] = useState(0)
 
   useEffect(() => {
@@ -31,6 +30,10 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
   }
 
   const duration = audio.current.duration
+
+  const disabledPrevButton = id === 1 || id === 6 || id === 11 || id === 16 || id === 21 || id === 26 ? "hidden" : ""
+
+  const disabledNextButton = id === 5 || id === 10 || id === 15 || id === 20 || id === 25 || id === 30 ? "hidden" : ""
 
   return (
     <div className="h-screen w-[480px] sm:w-[600px] bg-slate-200 absolute border-1 border-slate-300 flex flex-col shadow-lg">
@@ -56,7 +59,7 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
         className="w-[400px] h-[400px] rounded-lg"
         src={cover}/>
         <div className="mt-8 flex items-center gap-2">
-          <span>{formatTime(currentTime)}</span>
+          <span className="font-semibold">{formatTime(currentTime)}</span>
           <Slider
           min={0}
           max={duration}
@@ -66,7 +69,7 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
             audio.current.currentTime = newCurrentTime[0]
           }} 
           className="w-[350px]"/>
-          <span>
+          <span className="font-semibold">
             {
               duration
                 ? formatTime(duration)
@@ -77,18 +80,18 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
       </section>
 
       <footer className="mt-8 flex items-center justify-center gap-4">
-        <button onClick={prevSong} className="cursor-pointer">
-          <Prev />
+        <button onClick={prevSong} className={`cursor-pointer ${disabledPrevButton}`}>
+          <Prev className="hover:text-indigo-500/80" />
         </button>
         <button onClick={handlePlay} className="cursor-pointer">
           {
             playing 
-              ? <PauseIcon className="h-14 w-14" />
-              : <PlayIcon className="h-14 w-14" />
+              ? <PauseIcon className="h-14 w-14 hover:text-indigo-500/80" />
+              : <PlayIcon className="h-14 w-14 hover:text-indigo-500/80" />
           }
         </button>
-        <button onClick={nextSong} className="cursor-pointer">
-          <Next />
+        <button onClick={nextSong} className={`cursor-pointer ${disabledNextButton}`}>
+          <Next className="hover:text-indigo-500/80" />
         </button>
       </footer>
     </div>
