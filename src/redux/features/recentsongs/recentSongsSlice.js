@@ -8,10 +8,13 @@ export const recentSongsSlice = createSlice({
   reducers: {
     addRecentSong: (state, action) => {
       state.push(action.payload)
+    },
+    updateRecentSong: (state, action) => {
+      return action.payload
     }
   }
 })
 
-export const { addRecentSong } = recentSongsSlice.actions
+export const { addRecentSong, updateRecentSong } = recentSongsSlice.actions
 
 export default recentSongsSlice.reducer

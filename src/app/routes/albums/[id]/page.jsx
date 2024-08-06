@@ -19,8 +19,6 @@ export default function Albums({ params }) {
     return favorites.some(favorite => favorite.song.number === song.id)
   }
 
-  //console.log(favorites)
-
   return (
     <ul className="flex flex-col gap-4 mt-8">
 

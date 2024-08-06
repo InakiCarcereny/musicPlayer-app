@@ -45,15 +45,17 @@ export function Player () {
 
   const handleNextSong = () => {
     const nextSongID = currentSong.song.id + 1
-    setCurrentSong({
-      song: {
-        id: nextSongID,
-        title: currentSong.song.title,
-        artists: currentSong.song.artists,
-        cover: currentSong.song.cover,
-        albumId: currentSong.song.albumId
-      }
-    })
+    if (nextSongID) {
+      setCurrentSong({
+        song: {
+          id: nextSongID,
+          title: currentSong.song.title,
+          artists: currentSong.song.artists,
+          cover: currentSong.song.cover,
+          albumId: currentSong.song.albumId
+        }
+      })
+    }
   }
 
   const handlePrevSong = () => {
