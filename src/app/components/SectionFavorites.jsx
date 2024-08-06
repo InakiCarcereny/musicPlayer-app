@@ -37,7 +37,7 @@ export function SectionFavorites () {
 
       <ul className="mt-2 flex flex-col gap-1 mb-44">
         {
-          favorites.map(({song: {title, artists, cover, number}}) => {
+          favorites.map(({song: {title, artists, cover, number, albumId}}) => {
             return (
               <SongFavorites
               key={number} 
@@ -45,7 +45,8 @@ export function SectionFavorites () {
               artists={artists} 
               cover={cover} 
               number={number} 
-              removeFavorite={removeFavorite} />
+              removeFavorite={removeFavorite} 
+              albumId={albumId} />
             )
           })
         }

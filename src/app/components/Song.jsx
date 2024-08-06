@@ -4,14 +4,14 @@ import { HearthIcon } from "../icons/HearthIcon"
 import { toast } from "sonner"
 import { HearthIconFilled } from "../icons/HearthIconFilled"
 
-export function Song ({ title, artists, cover, number, isFavorite, index }) {
-  const { icon, handleSong } = useSong({ title, artists, cover, number })
+export function Song ({ title, artists, cover, number, isFavorite, index, albumId }) {
+  const { icon, handleSong } = useSong({ title, artists, cover, number, albumId })
 
   const { addFavorite, removeFavorite } = useFavoritesActions()
 
   const handleFavorite = () => {
     toast.success(`${title} added to your favorites`)
-    addFavorite({ song: { title, artists, cover, number } })
+    addFavorite({ song: { title, artists, cover, number, albumId } })
   }
 
   return (
