@@ -36,5 +36,5 @@ export function useSong ({ title, artists, cover, number, albumId }) {
     addRecentSong({ song: { title, artists, cover, number, albumId } })
   }
 
-  return { icon, handleSong, setPlayingId }
+  return { icon, handleSong }
 }

@@ -68,7 +68,7 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
             const newCurrentTime = [...value]
             audio.current.currentTime = newCurrentTime[0]
           }} 
-          className="w-[350px]"/>
+          className="w-[350px] hover:cursor-pointer"/>
           <span className="font-semibold">
             {
               duration

@@ -44,25 +44,11 @@ export function Player () {
   }
 
   const handleNextSong = () => {
-    const nextSongID = currentSong.song.id + 1
-    if (nextSongID) {
-      setCurrentSong({
-        song: {
-          id: nextSongID,
-          title: currentSong.song.title,
-          artists: currentSong.song.artists,
-          cover: currentSong.song.cover,
-          albumId: currentSong.song.albumId
-        }
-      })
-    }
-  }
+    const newId = currentSong.song.id + 1
 
-  const handlePrevSong = () => {
-    const prevSongID = currentSong.song.id - 1
     setCurrentSong({
       song: {
-        id: prevSongID,
+        id: newId,
         title: currentSong.song.title,
         artists: currentSong.song.artists,
         cover: currentSong.song.cover,
@@ -70,6 +56,28 @@ export function Player () {
       }
     })
   }
+
+  const handlePrevSong = () => {
+    setCurrentSong((prevSong) => {
+      const prevSongID = prevSong.song.id - 1
+      console.log(prevSong)
+
+      return {
+        ...prevSong,
+        song: {
+          ...prevSong.song,
+          id: prevSongID,
+          title: prevSong.song.title,
+          artists: prevSong.song.artists,
+          cover: prevSong.song.cover,
+          albumId: prevSong.song.albumId
+        }
+      }
+    })
+    
+  }
+  
+  //console.log(currentSong.song)
 
   return (
     <>
