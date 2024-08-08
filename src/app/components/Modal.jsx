@@ -38,7 +38,7 @@ export function Modal ({ handleOpen, title, artists, cover, handlePlay, playing,
   return (
     <div className="h-screen w-[480px] sm:w-[600px] bg-slate-200 absolute border-1 border-slate-300 flex flex-col shadow-lg">
       <header className="mt-4 ml-4 flex items-center gap-4">
-        <button onClick={handleOpen}>
+        <button onClick={handleOpen} className="cursor-pointer hover:scale-110 duration-100 hover:text-zinc-700">
           <ArrowDownIcon />
         </button>
         <span className="text-base font-bold">

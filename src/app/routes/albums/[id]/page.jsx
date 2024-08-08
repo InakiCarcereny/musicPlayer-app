@@ -5,6 +5,7 @@ import { useSelector } from "react-redux"
 
 export default function Albums({ params }) {
   const album = useSelector(state => state.albums.albums)
+  
   const favorites = useSelector(state => state.favorites)
 
   const ID = params.id

@@ -9,7 +9,7 @@ export function SearchResults ( { query } ) {
   const filterAlbums = album.filter((album) => album.artist.toLowerCase().includes(query.toLowerCase()))
 
   return (
-    <section className="mt-8 flex flex-col">
+    <section className="mt-8 flex flex-col mb-44">
       <h2 className="font-bold text-xl">
         Browse All
       </h2>

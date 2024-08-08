@@ -26,19 +26,14 @@ export function useSong ({ title, artists, cover, number, albumId }) {
         albumId: albumId
       }
     })
+    
     setPlaying(setPlayingId)
     
     setPlayingId 
     ? pauseSong() 
     : playSong()
 
-    const newRecentSongs = [...recentSongs]
-
-    if (newRecentSongs.length === 5) {
-      newRecentSongs.shift()
-    } else {
-      newRecentSongs.push(addRecentSong({ song: { title, artists, cover, number } }))
-    }
+    addRecentSong({ song: { title, artists, cover, number, albumId } })
   }
 
   return { icon, handleSong, setPlayingId }
